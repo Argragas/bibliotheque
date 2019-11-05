@@ -59,5 +59,5 @@ export class BookFormComponent implements OnInit {
   detectFiles(event) {
     this.onUploadFile(event.target.files[0]);
   }
-  
+
 }
