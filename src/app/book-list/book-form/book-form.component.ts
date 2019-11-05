@@ -12,13 +12,11 @@ import { Router } from '@angular/router';
 export class BookFormComponent implements OnInit {
 
   bookForm: FormGroup;
-
-  constructor(private formBuilder: FormBuilder, private booksService: BooksService, private router: Router) { }
-
-  bookForm: FormGroup;
   fileIsUploading = false;
   fileUrl: string;
   fileUploaded = false;
+
+  constructor(private formBuilder: FormBuilder, private booksService: BooksService, private router: Router) { }
 
   ngOnInit() {
     this.initForm();
